@@ -503,6 +503,12 @@
     },
     "done": true
   },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2026-06-22 19:09:14 -0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/black_bed": {
     "criteria": {
       "has_the_recipe": "2026-06-22 13:03:23 -0300"
