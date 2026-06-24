@@ -1,13 +1,151 @@
 {
   "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
-      "unlock_right_away": "2026-06-24 15:09:06 +0000"
+      "unlock_right_away": "2026-06-24 12:09:06 -0300"
     },
     "done": true
   },
   "cold_sweat:root": {
     "criteria": {
-      "requirement": "2026-06-24 15:09:06 +0000"
+      "requirement": "2026-06-24 12:09:06 -0300"
+    },
+    "done": true
+  },
+  "pneumaticcraft:recipes/misc/gun_ammo_weighted": {
+    "criteria": {
+      "has_gun_ammo": "2026-06-24 12:27:11 -0300"
+    },
+    "done": true
+  },
+  "exdeorum:recipes/building_blocks/compressed_dust": {
+    "criteria": {
+      "has_item": "2026-06-24 12:29:48 -0300"
+    },
+    "done": true
+  },
+  "exdeorum:core/string_mesh": {
+    "criteria": {
+      "has_string_mesh": "2026-06-24 12:25:51 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/white_dye": {
+    "criteria": {
+      "has_bone_meal": "2026-06-24 12:31:30 -0300"
+    },
+    "done": true
+  },
+  "create:root": {
+    "criteria": {
+      "0": "2026-06-24 12:25:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2026-06-24 12:26:38 -0300"
+    },
+    "done": true
+  },
+  "pneumaticcraft:recipes/misc/gun_ammo": {
+    "criteria": {
+      "has_minigun": "2026-06-24 12:27:08 -0300"
+    },
+    "done": true
+  },
+  "pneumaticcraft:recipes/misc/gun_ammo_freezing": {
+    "criteria": {
+      "has_gun_ammo": "2026-06-24 12:27:11 -0300"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/appliances/tree_fertilizer": {
+    "criteria": {
+      "has_item": "2026-06-24 12:31:30 -0300"
+    },
+    "done": true
+  },
+  "croptopia:gather_food": {
+    "criteria": {
+      "peanut_butter_and_jam": "2026-06-24 12:26:28 -0300"
+    },
+    "done": false
+  },
+  "pneumaticcraft:minigun": {
+    "criteria": {
+      "0": "2026-06-24 12:27:08 -0300"
+    },
+    "done": true
+  },
+  "pneumaticcraft:recipes/misc/gun_ammo_explosive": {
+    "criteria": {
+      "has_gun_ammo": "2026-06-24 12:27:11 -0300"
+    },
+    "done": true
+  },
+  "cold_sweat:recipes/boiler_icebox": {
+    "criteria": {
+      "has_item": "2026-06-24 12:29:37 -0300"
+    },
+    "done": true
+  },
+  "pneumaticcraft:recipes/misc/gun_ammo_ap": {
+    "criteria": {
+      "has_gun_ammo": "2026-06-24 12:27:11 -0300"
+    },
+    "done": true
+  },
+  "cold_sweat:recipes/waterskin": {
+    "criteria": {
+      "temperature": "2026-06-24 12:31:14 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bone_block": {
+    "criteria": {
+      "has_bone_meal": "2026-06-24 12:31:30 -0300"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/dog_food": {
+    "criteria": {
+      "has_any_ingredient": "2026-06-24 12:31:30 -0300"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/tree_fertilizer": {
+    "criteria": {
+      "has_item": "2026-06-24 12:31:30 -0300"
+    },
+    "done": true
+  },
+  "exdeorum:core/barrel": {
+    "criteria": {
+      "has_barrel": "2026-06-24 12:25:50 -0300"
+    },
+    "done": true
+  },
+  "farmersdelight:main/root": {
+    "criteria": {
+      "seeds": "2026-06-24 12:25:47 -0300"
+    },
+    "done": true
+  },
+  "pneumaticcraft:recipes/misc/gun_ammo_incendiary": {
+    "criteria": {
+      "has_gun_ammo": "2026-06-24 12:27:11 -0300"
+    },
+    "done": true
+  },
+  "cold_sweat:recipes/thermometer": {
+    "criteria": {
+      "temperature": "2026-06-24 12:29:44 -0300"
+    },
+    "done": true
+  },
+  "cold_sweat:extreme_temps": {
+    "criteria": {
+      "requirement": "2026-06-24 12:29:44 -0300"
     },
     "done": true
   },
