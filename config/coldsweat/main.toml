@@ -28,12 +28,12 @@
 	# Rate at which the player's body temperature changes (default: 1.0 (100%))
 	# ⌄ 
 	#Range: 0.0 ~ Infinity
-	"Rate Multiplier" = 0.3
+	"Rate Multiplier" = 0.03
 	#─────────────────────────────────────────────────────────────────────────
 	# Damage dealt to the player when they are too hot or too cold
 	# ⌄ 
 	#Range: 0.0 ~ Infinity
-	"Temperature Damage" = 0.15
+	"Temperature Damage" = 0.015
 	#─────────────────────────────────────────────────────────────────────────
 	# Nullifies temperature damage and effects when the difficulty is set to peaceful
 	# ⌄ 
