@@ -11,15 +11,21 @@
     },
     "done": true
   },
-  "pneumaticcraft:recipes/misc/gun_ammo_weighted": {
+  "create:root": {
     "criteria": {
-      "has_gun_ammo": "2026-06-24 12:27:11 -0300"
+      "0": "2026-06-24 12:25:47 -0300"
     },
     "done": true
   },
-  "exdeorum:recipes/building_blocks/compressed_dust": {
+  "farmersdelight:main/root": {
     "criteria": {
-      "has_item": "2026-06-24 12:29:48 -0300"
+      "seeds": "2026-06-24 12:25:47 -0300"
+    },
+    "done": true
+  },
+  "exdeorum:core/barrel": {
+    "criteria": {
+      "has_barrel": "2026-06-24 12:25:50 -0300"
     },
     "done": true
   },
@@ -29,17 +35,11 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/white_dye": {
+  "croptopia:gather_food": {
     "criteria": {
-      "has_bone_meal": "2026-06-24 12:31:30 -0300"
+      "peanut_butter_and_jam": "2026-06-24 12:26:28 -0300"
     },
-    "done": true
-  },
-  "create:root": {
-    "criteria": {
-      "0": "2026-06-24 12:25:47 -0300"
-    },
-    "done": true
+    "done": false
   },
   "minecraft:recipes/decorations/chest": {
     "criteria": {
@@ -53,31 +53,37 @@
     },
     "done": true
   },
-  "pneumaticcraft:recipes/misc/gun_ammo_freezing": {
-    "criteria": {
-      "has_gun_ammo": "2026-06-24 12:27:11 -0300"
-    },
-    "done": true
-  },
-  "create:recipes/misc/crafting/appliances/tree_fertilizer": {
-    "criteria": {
-      "has_item": "2026-06-24 12:31:30 -0300"
-    },
-    "done": true
-  },
-  "croptopia:gather_food": {
-    "criteria": {
-      "peanut_butter_and_jam": "2026-06-24 12:26:28 -0300"
-    },
-    "done": false
-  },
   "pneumaticcraft:minigun": {
     "criteria": {
       "0": "2026-06-24 12:27:08 -0300"
     },
     "done": true
   },
+  "pneumaticcraft:recipes/misc/gun_ammo_weighted": {
+    "criteria": {
+      "has_gun_ammo": "2026-06-24 12:27:11 -0300"
+    },
+    "done": true
+  },
+  "pneumaticcraft:recipes/misc/gun_ammo_freezing": {
+    "criteria": {
+      "has_gun_ammo": "2026-06-24 12:27:11 -0300"
+    },
+    "done": true
+  },
   "pneumaticcraft:recipes/misc/gun_ammo_explosive": {
+    "criteria": {
+      "has_gun_ammo": "2026-06-24 12:27:11 -0300"
+    },
+    "done": true
+  },
+  "pneumaticcraft:recipes/misc/gun_ammo_ap": {
+    "criteria": {
+      "has_gun_ammo": "2026-06-24 12:27:11 -0300"
+    },
+    "done": true
+  },
+  "pneumaticcraft:recipes/misc/gun_ammo_incendiary": {
     "criteria": {
       "has_gun_ammo": "2026-06-24 12:27:11 -0300"
     },
@@ -89,15 +95,39 @@
     },
     "done": true
   },
-  "pneumaticcraft:recipes/misc/gun_ammo_ap": {
+  "cold_sweat:recipes/thermometer": {
     "criteria": {
-      "has_gun_ammo": "2026-06-24 12:27:11 -0300"
+      "temperature": "2026-06-24 12:29:44 -0300"
+    },
+    "done": true
+  },
+  "cold_sweat:extreme_temps": {
+    "criteria": {
+      "requirement": "2026-06-24 12:29:44 -0300"
+    },
+    "done": true
+  },
+  "exdeorum:recipes/building_blocks/compressed_dust": {
+    "criteria": {
+      "has_item": "2026-06-24 12:29:48 -0300"
     },
     "done": true
   },
   "cold_sweat:recipes/waterskin": {
     "criteria": {
       "temperature": "2026-06-24 12:31:14 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/white_dye": {
+    "criteria": {
+      "has_bone_meal": "2026-06-24 12:31:30 -0300"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/appliances/tree_fertilizer": {
+    "criteria": {
+      "has_item": "2026-06-24 12:31:30 -0300"
     },
     "done": true
   },
@@ -119,33 +149,171 @@
     },
     "done": true
   },
-  "exdeorum:core/barrel": {
+  "minecraft:recipes/redstone/redstone_torch": {
     "criteria": {
-      "has_barrel": "2026-06-24 12:25:50 -0300"
+      "has_redstone": "2026-06-24 12:41:55 -0300"
     },
     "done": true
   },
-  "farmersdelight:main/root": {
+  "create:recipes/misc/crafting/logistics/pulse_extender": {
     "criteria": {
-      "seeds": "2026-06-24 12:25:47 -0300"
+      "has_item": "2026-06-24 12:41:55 -0300"
     },
     "done": true
   },
-  "pneumaticcraft:recipes/misc/gun_ammo_incendiary": {
+  "bigreactors:recipes/building_blocks/reactor/basic/passivetap_fe": {
     "criteria": {
-      "has_gun_ammo": "2026-06-24 12:27:11 -0300"
+      "has_item2": "2026-06-24 12:41:55 -0300"
     },
     "done": true
   },
-  "cold_sweat:recipes/thermometer": {
+  "immersiveengineering:recipes/misc/crafting/redstone_acid": {
     "criteria": {
-      "temperature": "2026-06-24 12:29:44 -0300"
+      "has_redstone_dust": "2026-06-24 12:41:55 -0300"
     },
     "done": true
   },
-  "cold_sweat:extreme_temps": {
+  "ae2:recipes/misc/misc/tiny_tnt": {
     "criteria": {
-      "requirement": "2026-06-24 12:29:44 -0300"
+      "has_gunpowder": "2026-06-24 12:41:56 -0300"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/logistics/pulse_repeater": {
+    "criteria": {
+      "has_item": "2026-06-24 12:41:55 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/target": {
+    "criteria": {
+      "has_redstone": "2026-06-24 12:41:55 -0300"
+    },
+    "done": true
+  },
+  "bigreactors:recipes/building_blocks/reactor/reinforced/passivetap_fe": {
+    "criteria": {
+      "has_item2": "2026-06-24 12:41:55 -0300"
+    },
+    "done": true
+  },
+  "ae2:recipes/misc/network/cells/fluid_cell_housing": {
+    "criteria": {
+      "has_dusts/redstone": "2026-06-24 12:41:55 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/compass": {
+    "criteria": {
+      "has_redstone": "2026-06-24 12:41:55 -0300"
+    },
+    "done": true
+  },
+  "ae2:recipes/misc/network/cables/smart_fluix": {
+    "criteria": {
+      "has_dusts/redstone": "2026-06-24 12:41:55 -0300"
+    },
+    "done": true
+  },
+  "immersiveengineering:recipes/misc/crafting/rs_engineering": {
+    "criteria": {
+      "has_redstone": "2026-06-24 12:41:55 -0300"
+    },
+    "done": true
+  },
+  "ae2:recipes/misc/network/cells/item_cell_housing": {
+    "criteria": {
+      "has_dusts/redstone": "2026-06-24 12:41:55 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/redstone_block": {
+    "criteria": {
+      "has_redstone": "2026-06-24 12:41:55 -0300"
+    },
+    "done": true
+  },
+  "ae2:recipes/misc/network/cables/dense_smart_fluix": {
+    "criteria": {
+      "has_dusts/redstone": "2026-06-24 12:41:55 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/firework_rocket_simple": {
+    "criteria": {
+      "has_gunpowder": "2026-06-24 12:41:56 -0300"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/logistics/pulse_timer": {
+    "criteria": {
+      "has_item": "2026-06-24 12:41:55 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/clock": {
+    "criteria": {
+      "has_redstone": "2026-06-24 12:41:55 -0300"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/logistics/powered_latch": {
+    "criteria": {
+      "has_item": "2026-06-24 12:41:55 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/note_block": {
+    "criteria": {
+      "has_redstone": "2026-06-24 12:41:55 -0300"
+    },
+    "done": true
+  },
+  "bigreactors:recipes/building_blocks/turbine/basic/passivetap_fe": {
+    "criteria": {
+      "has_item2": "2026-06-24 12:41:55 -0300"
+    },
+    "done": true
+  },
+  "bigreactors:recipes/building_blocks/turbine/reinforced/passivetap_fe": {
+    "criteria": {
+      "has_item2": "2026-06-24 12:41:55 -0300"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2026-06-24 12:39:46 -0300"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/logistics/powered_toggle_latch": {
+    "criteria": {
+      "has_item": "2026-06-24 12:41:55 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dropper": {
+    "criteria": {
+      "has_redstone": "2026-06-24 12:41:55 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/tnt": {
+    "criteria": {
+      "has_gunpowder": "2026-06-24 12:41:56 -0300"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/materials/rose_quartz": {
+    "criteria": {
+      "has_item": "2026-06-24 12:41:55 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/piston": {
+    "criteria": {
+      "has_redstone": "2026-06-24 12:41:55 -0300"
     },
     "done": true
   },
