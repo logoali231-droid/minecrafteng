@@ -1,0 +1,175 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "compact_machines"
+	group: "7B2BB3FA11A6EC1A"
+	icon: "thermal:machine_pulverizer"
+	id: "5171DDEC0270B7AC"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["63CFE9C4929F825F"]
+			description: ["These new fancy PCBs now allow the integration of computers for much more advanced machinery."]
+			id: "7CCA967151BDB163"
+			rewards: [{
+				count: 2
+				id: "04D1EB092BAF94D2"
+				item: "thermal:dynamo_output_augment"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "0324A23C1A44429B"
+				item: "thermal:rf_coil"
+				type: "item"
+			}]
+			title: "Flux Coils"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7CCA967151BDB163"]
+			description: ["Large energy storage in a small package."]
+			id: "5C2BEC94352B41CB"
+			tasks: [{
+				id: "7F5756034795A0E6"
+				item: {
+					Count: 1
+					id: "thermal:energy_cell"
+					tag: {
+						BlockEntityTag: {
+							Energy: 0
+							EnergyMax: 1000000
+							EnergyRecv: 1000
+							EnergySend: 1000
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7CCA967151BDB163"]
+			description: [
+				"These are quite the departure from the current massive machinery."
+				""
+				"The induction smelter allows for much simpler creation of empty PCBs using silicon instead of vacuum tubes."
+			]
+			id: "3DB1B9614BDB09FB"
+			rewards: [{
+				count: 4
+				id: "34455A7B8B248B57"
+				item: "thermal:rf_coil"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "37E6FD62EFBAC68A"
+					item: "thermal:machine_pulverizer"
+					type: "item"
+				}
+				{
+					id: "3DCF0A2260FB1387"
+					item: "thermal:machine_furnace"
+					type: "item"
+				}
+				{
+					id: "70401A9DB820EBDC"
+					item: "thermal:machine_smelter"
+					type: "item"
+				}
+			]
+			title: "Mini Machines"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7CCA967151BDB163"]
+			description: ["These are the first step towards an electrical storage solution"]
+			id: "017BC01533F880A2"
+			rewards: [
+				{
+					count: 2
+					id: "6B4D4FE096F4F06C"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "56A3E9F79184B8CC"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "66FCBE90C94261BF"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7F873674D5BC81D6"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+				{
+					id: "57154A2FEDFB1FDA"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+				{
+					id: "51C4A8D9EDD9EA28"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+			]
+			title: "Processors"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["017BC01533F880A2"]
+			id: "601166B071EBBD70"
+			tasks: [
+				{
+					id: "1DFD6D336BCE5B32"
+					item: "ae2:drive"
+					type: "item"
+				}
+				{
+					id: "756775012AA51E73"
+					item: "ae2:crafting_terminal"
+					type: "item"
+				}
+				{
+					id: "6B308A388FE80DF9"
+					item: {
+						Count: 1
+						id: "ae2:item_storage_cell_1k"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "4089D1DEBA2F7E24"
+					item: "ae2:controller"
+					type: "item"
+				}
+				{
+					id: "3F79E354573546D3"
+					item: "ae2:fluix_glass_cable"
+					type: "item"
+				}
+			]
+			title: "Electrical Storage"
+			x: -1.0d
+			y: 6.0d
+		}
+	]
+	title: "Compact Machines"
+}

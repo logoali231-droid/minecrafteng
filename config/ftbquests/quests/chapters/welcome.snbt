@@ -1,0 +1,67 @@
+{
+	autofocus_id: "1630291B678A8EF3"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: ""
+	icon: "sync:shell_storage"
+	id: "01A18104BFA4C19A"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to crashed, a skyblock style modpack heavily inspired by the legendary \"Crash Landing\"."
+				""
+				"For an extra challenge, this modpack is designed to be played in hardcore, making use of the Sync mod to provide extra lives."
+			]
+			icon: "exdeorum:dust"
+			id: "1630291B678A8EF3"
+			size: 3.0d
+			tasks: [{
+				id: "5D9368659B9723F9"
+				title: "Crashed"
+				type: "checkmark"
+			}]
+			title: "Welcome to Crashed"
+			x: -4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1630291B678A8EF3"]
+			description: [
+				"The ship has a Sync Constructor for each person on board to create new clones."
+				""
+				"Right clicking on the constructor will link the machine to you."
+				""
+				"The only way right now to power the constructor is the treadmill. Standing on it will provide power."
+				""
+			]
+			icon: "sync:shell_constructor"
+			id: "702DC64844487B22"
+			rewards: [
+				{
+					id: "22574AD4556E1A17"
+					item: "sync:shell_constructor"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "66E3B8A44C2F1995"
+					item: "sync:treadmill"
+					team_reward: false
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "3C025226AA92E396"
+				title: "Making Clones"
+				type: "checkmark"
+			}]
+			x: -10.0d
+			y: -6.0d
+		}
+	]
+	title: "Welcome"
+}

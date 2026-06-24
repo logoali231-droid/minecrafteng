@@ -1,0 +1,683 @@
+{
+	autofocus_id: "2EAE6C1592692746"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "emergency_measures"
+	group: "7B2BB3FA11A6EC1A"
+	icon: "exdeorum:oak_sieve"
+	id: "4B1574CF216E1FDE"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"The emergency supplies on board the ship will be useful."
+				""
+				"I should find somewhere to setup this sieve and barrel."
+			]
+			icon: "exdeorum:oak_sieve"
+			id: "2EAE6C1592692746"
+			rewards: [{
+				id: "7490381EC566110F"
+				item: {
+					Count: 1
+					id: "cold_sweat:filled_waterskin"
+					tag: {
+						Purity: 3
+						Temperature: -48.09999999999985d
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "I've awoken on a strange planet with no memory of how I got here."
+			tasks: [
+				{
+					id: "0576F1E08C4AFDAD"
+					item: "exdeorum:oak_sieve"
+					type: "item"
+				}
+				{
+					id: "5EFA4E2CB3031822"
+					item: "exdeorum:oak_barrel"
+					type: "item"
+				}
+			]
+			title: "Emergency Supplies"
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2EAE6C1592692746"]
+			description: [
+				"The first step to suriving this barren wasteland will be to get my hands on some dirt."
+				""
+				"I should be able to make some dirt by combining my emergency water supplies with some bonemeal in this wooden barrel."
+			]
+			icon: "minecraft:bone_meal"
+			id: "3CA7F82502E74341"
+			rewards: [{
+				count: 2
+				id: "7122F13A10FDFDAE"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "056E0E4B460408FC"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					id: "0A6750709C237DCC"
+					item: "minecraft:dirt"
+					type: "item"
+				}
+			]
+			title: "Getting Dirt"
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3CA7F82502E74341"]
+			description: ["By sifting dirt I can obtain some grass seeds which will be my only hope of getting resources on this planet."]
+			id: "103CBC95D59BF1AA"
+			rewards: [{
+				count: 2
+				id: "53AEF7DD769589A9"
+				item: "exdeorum:grass_seeds"
+				type: "item"
+			}]
+			tasks: [{
+				id: "65D1CCDF290DDCA5"
+				item: "exdeorum:grass_seeds"
+				type: "item"
+			}]
+			title: "Sifting Dirt"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3CA7F82502E74341"]
+			description: [
+				"I will get some pebbles from sifting dirt which I can turn into cobblestone."
+				""
+				"This is slow, but it will allow me to eventually acquire lava for infinite generation."
+			]
+			id: "42B21311427C6892"
+			rewards: [{
+				count: 3
+				id: "5647AB684FC88E94"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "631528A0920EEC5D"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			title: "Stone"
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["103CBC95D59BF1AA"]
+			description: ["Sifting moss made from the dropped grass seeds has a chance to drop a sapling."]
+			id: "246B6819338C49FD"
+			rewards: [{
+				count: 16
+				id: "7C5516CB19184F67"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0A2425C3C3A93BB2"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "and(item_tag(minecraft:saplings)mod(minecraft)not(or(item(minecraft:azalea)item(minecraft:flowering_azalea)item(minecraft:mangrove_propagule)item(minecraft:cherry_sapling))))"
+						}
+					}
+					title: "Any Sapling"
+					type: "item"
+				}
+				{
+					id: "2ADDA0EB41B1C339"
+					item: "minecraft:moss_block"
+					type: "item"
+				}
+			]
+			title: "Wood from Dust"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["246B6819338C49FD"]
+			description: [
+				"I'll need a tinker station so I can make my first tools."
+				""
+				"&oNote: Vanilla tools are disabled&r"
+			]
+			icon: {
+				Count: 1
+				id: "tconstruct:pickaxe"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:wood"
+						"tconstruct:wood"
+						"tconstruct:wood"
+					]
+					tic_modifiers: [
+						{
+							level: 3
+							name: "tconstruct:cultivated"
+						}
+						{
+							level: 1
+							name: "tconstruct:pierce"
+						}
+					]
+					tic_persistent: { }
+					tic_stats: {
+						"tconstruct:attack_damage": 1.0f
+						"tconstruct:attack_speed": 1.2f
+						"tconstruct:durability": 60.0f
+						"tconstruct:mining_speed": 2.0f
+					}
+					tic_volatile_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			id: "57DA0829253C90CE"
+			tasks: [
+				{
+					id: "3BC88DB014241B57"
+					item: "tconstruct:pattern"
+					type: "item"
+				}
+				{
+					id: "263F3AAC8C2C0B01"
+					item: "tconstruct:tinker_station"
+					type: "item"
+				}
+				{
+					id: "454D992A94348576"
+					item: "tconstruct:part_builder"
+					type: "item"
+				}
+			]
+			title: "Making Tools"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["42B21311427C6892"]
+			description: ["I can get clay by mixing dust and water in the wood barrel from the emergency supplies."]
+			id: "35E36DE735F23FEC"
+			rewards: [{
+				count: 4
+				id: "120CA52AD9D64698"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			tasks: [{
+				id: "72062834D7E820D0"
+				item: "minecraft:clay"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["35E36DE735F23FEC"]
+			description: [
+				"With a mix of clay and bone meal I can make a crucible capible of making lava."
+				""
+				"With access lava and a bucket, I can now make a much less labour intensive source of cobblestone."
+			]
+			icon: "exdeorum:porcelain_crucible"
+			id: "7767F7E783B73701"
+			tasks: [
+				{
+					id: "0F01AB183870A204"
+					item: "exdeorum:unfired_porcelain_crucible"
+					type: "item"
+				}
+				{
+					id: "553DB3CBE9A5C63F"
+					item: "exdeorum:porcelain_crucible"
+					type: "item"
+				}
+				{
+					id: "4D558D6B7DC54808"
+					item: "exdeorum:unfired_porcelain_bucket"
+					type: "item"
+				}
+				{
+					id: "1138E921D2390C7B"
+					item: "exdeorum:porcelain_bucket"
+					type: "item"
+				}
+			]
+			title: "Melting Stone"
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["246B6819338C49FD"]
+			description: [
+				"There are 2 options to create water."
+				""
+				"My fastest and most efficient option is to melt saplings or leaves the onboard Magma Crucibles. My current source of power is limited though."
+				""
+				"The other option is to use the Wood Crucible to create water. This is slower and less efficient but does not require power."
+			]
+			id: "3CFB44F10362DA6F"
+			tasks: [{
+				count: 5L
+				id: "521EB5935903BDEA"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:water"
+					}
+				}
+				type: "item"
+			}]
+			title: "Making Water"
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["246B6819338C49FD"]
+			description: ["With a crook I can get my hands on some worms that will give me access to more string."]
+			icon: "exdeorum:silk_worm"
+			id: "5014AE9B00F70BF0"
+			tasks: [
+				{
+					id: "6194DB39D4A11B3F"
+					item: "minecraft:string"
+					type: "item"
+				}
+				{
+					id: "2F848E726725079D"
+					item: "exdeorum:silk_worm"
+					type: "item"
+				}
+			]
+			title: "Worms"
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7767F7E783B73701"
+				"5014AE9B00F70BF0"
+			]
+			description: ["Now that I can make cobblestone and wood, its time to get my hands on some more valuable resources."]
+			id: "08F67266200F5360"
+			rewards: [
+				{
+					count: 16
+					id: "295E8EB7DA41C5D9"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "79EB7635C41F49F8"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "777837074C447124"
+					item: "exdeorum:flint_mesh"
+					type: "item"
+				}
+				{
+					id: "18AF1CAFA313A3A9"
+					item: "exdeorum:iron_mesh"
+					type: "item"
+				}
+				{
+					id: "110EDDBA3A4488D5"
+					item: {
+						Count: 1
+						id: "exdeorum:stone_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Getting Resources"
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["08F67266200F5360"]
+			description: ["Go check out the \"Mechnical Power\" section"]
+			icon: "create:cogwheel"
+			id: "3BFB2C7DD2591AF8"
+			tasks: [{
+				id: "682294CC4F3AB65D"
+				title: "Mechanical Power"
+				type: "checkmark"
+			}]
+			x: 13.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"246B6819338C49FD"
+				"27E1A112BB30D056"
+				"35E36DE735F23FEC"
+			]
+			description: [
+				"To keep cool in this wasteland I will need to make an ice box."
+				""
+				"While there is clearly no ice to feed it, clay will work as a substitute."
+			]
+			id: "5FA5E587340AB7DB"
+			size: 1.25d
+			tasks: [{
+				id: "3ED88B371578A934"
+				item: "cold_sweat:icebox"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2EAE6C1592692746"]
+			description: [
+				"As an emergency measure, the Magma Crucibles on board are capable of producing water using sky stone dust."
+				""
+				"It will use a large amount of the limited available power though, so it should be avoided if possible."
+			]
+			icon: "ae2:sky_dust"
+			id: "500D7487E20CD21D"
+			tasks: [{
+				id: "619B7C723888D3C2"
+				item: "ae2:sky_dust"
+				type: "item"
+			}]
+			title: "Squeezing Water from Stone"
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3CFB44F10362DA6F"]
+			description: ["Water can be purified by cooking it in a furnace or on a campfire."]
+			id: "637E920826C668E5"
+			rewards: [{
+				count: 2
+				id: "698FE262C33AD51E"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:water"
+						Purity: 3
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "68D0BBEE3D5B5156"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:water"
+						Purity: 3
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			title: "Purifying"
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["246B6819338C49FD"]
+			description: ["By collecting some compostable materials such as leaves or saplings in a barrel, dirt is now a much cheaper resource."]
+			id: "09A8929B59AFAB22"
+			rewards: [{
+				count: 32
+				id: "52D36321636DFD33"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			tasks: [{
+				count: 32L
+				id: "10E0A8EBE6688AC0"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			title: "Cheap as Dirt"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2EAE6C1592692746"]
+			description: [
+				"The waterskin included in the emergency supplies is the only way to keep cool."
+				""
+				"I can dump the water on myself by Right clicking with it."
+				""
+				"It can be refilled by crafting it with water bottles. To cool down the waterskin it needs to be placed in an icebox."
+			]
+			id: "27E1A112BB30D056"
+			tasks: [
+				{
+					id: "160A9059869DFB4E"
+					item: {
+						Count: 1
+						id: "cold_sweat:filled_waterskin"
+						tag: {
+							Purity: 3
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "56E5F75AD25C5DCA"
+					item: "cold_sweat:waterskin"
+					type: "item"
+				}
+				{
+					id: "0C104FBEA3E94775"
+					item: {
+						Count: 1
+						id: "cold_sweat:filled_waterskin"
+						tag: {
+							Purity: 3
+							Temperature: -48.09999999999985d
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["57DA0829253C90CE"]
+			description: ["A very important tool that acts as both early game shears and a hoe."]
+			id: "3523EB72FCD850A2"
+			rewards: [{
+				id: "2736948DACF9AC98"
+				item: {
+					Count: 1
+					id: "tconstruct:small_blade"
+					tag: {
+						Material: "tconstruct:bone"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "185586AE5B16D284"
+				item: {
+					Count: 1
+					id: "tconstruct:kama"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:wood"
+							"tconstruct:wood"
+							"tconstruct:wood"
+						]
+						tic_modifiers: [
+							{
+								level: 3
+								name: "tconstruct:cultivated"
+							}
+							{
+								level: 1
+								name: "tconstruct:tilling"
+							}
+							{
+								level: 1
+								name: "tconstruct:shears"
+							}
+							{
+								level: 1
+								name: "tconstruct:harvest"
+							}
+						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 0.5f
+						}
+						tic_persistent: { }
+						tic_stats: {
+							"tconstruct:attack_damage": 0.5f
+							"tconstruct:attack_speed": 1.6f
+							"tconstruct:durability": 60.0f
+							"tconstruct:mining_speed": 2.0f
+						}
+						tic_volatile_data: {
+							abilities: 1
+							upgrades: 3
+						}
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["57DA0829253C90CE"]
+			description: ["Combo axe, shovel and hoe for all your farming needs!"]
+			id: "15D6B7823CAB0CE7"
+			rewards: [
+				{
+					id: "378B8A464B9CA17A"
+					item: {
+						Count: 1
+						id: "tconstruct:small_axe_head"
+						tag: {
+							Material: "tconstruct:bone"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "13EE22EF9FFE7419"
+					item: {
+						Count: 1
+						id: "tconstruct:adze_head"
+						tag: {
+							Material: "tconstruct:bone"
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "70FF143D45A63C9E"
+				item: {
+					Count: 1
+					id: "tconstruct:mattock"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:wood"
+							"tconstruct:wood"
+							"tconstruct:wood"
+						]
+						tic_modifiers: [
+							{
+								level: 3
+								name: "tconstruct:cultivated"
+							}
+							{
+								level: 1
+								name: "tconstruct:tilling"
+							}
+						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 1.1f
+							"tconstruct:durability": 1.25f
+							"tconstruct:mining_speed": 1.1f
+						}
+						tic_persistent: { }
+						tic_stats: {
+							"tconstruct:attack_damage": 1.6500001f
+							"tconstruct:attack_speed": 0.9f
+							"tconstruct:durability": 75.0f
+							"tconstruct:mining_speed": 2.2f
+						}
+						tic_volatile_data: {
+							abilities: 1
+							upgrades: 3
+						}
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["500D7487E20CD21D"]
+			description: [
+				"The power in the capacitato will only last so long."
+				""
+				"As an emergency measure, the crucible can be put directly in front of the treadmill to generate some power."
+				""
+				"This will be slow and use up hunger."
+			]
+			icon: "sync:treadmill"
+			id: "3E869211EC4FE26D"
+			tasks: [{
+				id: "750EE4441BE4B92B"
+				title: "Treadmill Power"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+	]
+	title: "Emergency Measures"
+}

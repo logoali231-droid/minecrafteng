@@ -1,0 +1,268 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "physical_power"
+	group: "7B2BB3FA11A6EC1A"
+	icon: "create:large_cogwheel"
+	id: "20DCA883EA4CDA01"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["08F67266200F5360"]
+			description: [
+				"Since its impossible to build power generators without more precisely machined materials, I will need to create some mechanical advantage."
+				""
+				"Now that I have access to water a water wheel can give me a free but small source of power."
+			]
+			id: "519F36E4627FEAA2"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "513BEB784F4F1BC1"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			title: "Spinning Gears"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["519F36E4627FEAA2"]
+			id: "21B18BD11D5DC523"
+			rewards: [
+				{
+					count: 32
+					id: "39BF0713D14ABF0C"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "6C15250CEF76EE62"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "56BEFC6586BDEBAF"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1ABAC684CF310007"
+					item: "create:gearbox"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5F4E625BBA25676F"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					id: "6E25F9B53934CDD9"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					id: "559352CAA516081A"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+				{
+					id: "2EB06059AC0738FB"
+					item: "create:andesite_casing"
+					type: "item"
+				}
+			]
+			title: "Shafts \\& Cogs"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["21B18BD11D5DC523"]
+			description: [
+				"I will need a lot of metal plates to continue getting my hands on new materials."
+				""
+				"This press should finally give me the ability to make some."
+			]
+			icon: "create:mechanical_press"
+			id: "094BA0E468E3F738"
+			rewards: [{
+				count: 16
+				id: "37CEADF958B82E08"
+				item: "create:iron_sheet"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "43317875EBCEC4BF"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "6657FD382218401C"
+					item: "create:depot"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["094BA0E468E3F738"]
+			description: [
+				"A crusher will be a valuable tool for doubling my ore and automating gravel production."
+				" "
+			]
+			id: "2CA57B0A4F04F2B4"
+			tasks: [{
+				id: "6C63FB8A16BB7060"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			title: "Mechanical Crushing"
+			x: 7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["094BA0E468E3F738"]
+			description: ["This mixer will allow for the creation of cardboard, which will allow me to craft explosives for the next tier of machinery, as well as an early storage system with a bit of work."]
+			id: "7CE755C293890D6E"
+			rewards: [{
+				count: 16
+				id: "579137B5F39A2AAA"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F031957B67375DB"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7CE755C293890D6E"]
+			description: ["Cardboard is a simple material, but it is vital for the creation of TNT."]
+			icon: "create:cardboard"
+			id: "0A9D7F47FD480218"
+			rewards: [{
+				id: "0BF35E4E490BF3A5"
+				item: "create:cardboard_sword"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "1D9C925ACB924822"
+					item: "create:cardboard"
+					type: "item"
+				}
+				{
+					id: "0868E0B72EA6C8C8"
+					item: "create:pulp"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0A9D7F47FD480218"]
+			description: ["Visit the \"Building Pressure\" page to continue."]
+			icon: "minecraft:tnt"
+			id: "44CC00B787EB11CB"
+			tasks: [{
+				id: "7A0DA70C7DBC5C56"
+				type: "checkmark"
+			}]
+			title: "Building Pressure"
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"0A9D7F47FD480218"
+				"71EAD833C1B895AD"
+			]
+			description: ["Since electrical storage solutions are a long time away, perhaps I should invest in a lower tech alternative."]
+			icon: "create:white_postbox"
+			id: "6AC9EB15645D14D3"
+			rewards: [{
+				id: "451CDA9FBF701955"
+				item: "minecraft:parrot_spawn_egg"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0DBC08DC3A90E28C"
+					item: "create:packager"
+					type: "item"
+				}
+				{
+					id: "7B707445A4C3CDEA"
+					item: "create:stock_link"
+					type: "item"
+				}
+				{
+					id: "35647C0D6A7D23BF"
+					item: "create:stock_ticker"
+					type: "item"
+				}
+			]
+			title: "Post Office"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["21B18BD11D5DC523"]
+			description: [
+				"Mechnical belts is the only way I will be able to move items automatically until power generation is possible."
+				""
+				"With a bit of brainpower, anything is possible!"
+			]
+			icon: "create:belt_connector"
+			id: "71EAD833C1B895AD"
+			tasks: [
+				{
+					id: "2A9A97A307E289D1"
+					item: "create:belt_connector"
+					type: "item"
+				}
+				{
+					id: "50E4F459442CFA75"
+					item: "create:andesite_funnel"
+					type: "item"
+				}
+				{
+					id: "7C0FA3DC6160927F"
+					item: "create:chute"
+					type: "item"
+				}
+			]
+			title: "Mechanical Belts"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["21B18BD11D5DC523"]
+			description: ["For a renewable source of power, converting simple rotation into electricity is a great option."]
+			id: "6FBB4D9E06DD9A4E"
+			tasks: [{
+				id: "6F66831FAA20BA7F"
+				item: "create_new_age:generator_coil"
+				type: "item"
+			}]
+			title: "Renewable Energy"
+			x: 7.5d
+			y: 0.0d
+		}
+	]
+	title: "Mechanical Power"
+}

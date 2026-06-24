@@ -1,0 +1,17 @@
+{
+	id: "689db8dd-33c0-4a0a-8f27-1a3176c7a775"
+	type: "player"
+	player_name: "mateo12356"
+	ranks: {
+		689db8dd-33c0-4a0a-8f27-1a3176c7a775: "owner"
+	}
+	properties: {
+		"ftbteams:display_name": "mateo12356"
+		"ftbteams:description": ""
+		"ftbteams:color": "#ED59FF"
+		"ftbteams:free_to_join": 0b
+		"ftbteams:max_msg_history_size": 1000
+	}
+	message_history: [ ]
+	extra: { }
+}

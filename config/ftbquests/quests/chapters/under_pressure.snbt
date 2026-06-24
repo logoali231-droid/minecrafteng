@@ -1,0 +1,190 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "under_pressure"
+	group: "7B2BB3FA11A6EC1A"
+	icon: "pneumaticcraft:pressure_tube"
+	id: "23D9429E601CC725"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["44CC00B787EB11CB"]
+			description: [
+				"To create a stronger form of iron, I can use the crude method of high pressure explosions for now."
+				""
+				"First I'll need to get my hands on some TNT with the new materials I've acquired."
+			]
+			id: "197FE2C858764EB2"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "5EF06961B50A3C4F"
+				item: "minecraft:tnt"
+				type: "item"
+			}]
+			title: "Exploding Iron"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["197FE2C858764EB2"]
+			description: [
+				"I can increase the strength of my iron by exploding TNT in a closed space with some Iron ingots on the floor."
+				""
+				"This is expensive and inefficient, but with enough compressed iron its possible to use compressed air to do it more efficiently."
+			]
+			id: "1BA25B1CB8916514"
+			tasks: [{
+				id: "31F31117575FABA8"
+				item: "pneumaticcraft:ingot_iron_compressed"
+				type: "item"
+			}]
+			title: "Compressing Iron"
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["12E58F61955B8404"]
+			description: ["Building a pressure chamber is the only way to stop burning through all that TNT and iron..."]
+			id: "6CE3E1B224AF63A4"
+			rewards: [
+				{
+					count: 4
+					id: "4ECE2BA72A58562E"
+					item: "pneumaticcraft:pressure_chamber_glass"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6C10E72390B82181"
+					item: "pneumaticcraft:pressure_chamber_wall"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					count: 16L
+					id: "66F127D63862738E"
+					item: { Count: 16, id: "pneumaticcraft:pressure_chamber_wall" }
+					type: "item"
+				}
+				{
+					id: "2678942C9544924E"
+					item: "pneumaticcraft:pressure_chamber_valve"
+					type: "item"
+				}
+			]
+			title: "Pressure Chamber"
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1BA25B1CB8916514"]
+			description: ["This manual offers all there is to know about using air presssure."]
+			id: "3B1CF19F229207FB"
+			tasks: [{
+				id: "2A4194553F2F94FA"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "pneumaticcraft:book"
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6CE3E1B224AF63A4"]
+			description: [
+				"With a consistent source of compressed Iron, I can now begin working on some basic electricity."
+				""
+				"Go check out the \"Heavy Machinery\" Tab"
+			]
+			icon: "immersiveengineering:transformer_hv"
+			id: "6102689B16E5D61A"
+			tasks: [{
+				id: "2456575519B0C3CE"
+				title: "Heavy Machinery"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6CE3E1B224AF63A4"]
+			description: ["I can finally make some ammo and recharge that minigun!"]
+			id: "006BD2D3EE5E9CA3"
+			tasks: [{
+				id: "2C32DD56DA6878A6"
+				item: {
+					Count: 1
+					id: "pneumaticcraft:gun_ammo"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Minigun"
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1BA25B1CB8916514"]
+			description: [
+				"I need a better way to compress this iron..."
+				""
+				"An air compressor and some tubes is a good start."
+			]
+			icon: "pneumaticcraft:air_compressor"
+			id: "12E58F61955B8404"
+			tasks: [
+				{
+					count: 16L
+					id: "15134A0840BD4A0E"
+					item: { Count: 16, id: "pneumaticcraft:pressure_tube" }
+					type: "item"
+				}
+				{
+					id: "770275D58068BE5E"
+					item: "pneumaticcraft:air_compressor"
+					type: "item"
+				}
+			]
+			title: "Compressing Air"
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["12E58F61955B8404"]
+			description: ["Liquid fuel variant of the standard compressor."]
+			id: "731CE7D9814AB548"
+			tasks: [{
+				id: "157C4B778285A243"
+				item: "pneumaticcraft:liquid_compressor"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["12E58F61955B8404"]
+			description: ["Compreses air using a large tempurate difference on each side, for example water and lava."]
+			id: "54ABA7F616CF8ABC"
+			tasks: [{
+				id: "2AB3E78554D77E32"
+				item: "pneumaticcraft:thermal_compressor"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+	]
+	title: "Building Pressure"
+}

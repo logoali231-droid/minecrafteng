@@ -1,0 +1,6 @@
+mods/
+bin/
+.mixin.out/
+logs/
+resourcepacks/
+shaderpacks/

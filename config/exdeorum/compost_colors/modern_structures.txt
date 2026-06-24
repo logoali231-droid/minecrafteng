@@ -1,0 +1,10 @@
+// Compost colors for modern_structures. You may add your own colors, change existing ones, or remove colors that aren't needed.
+batlleaxe, #949472
+crowbar, #b61616
+knife, #686868
+netherstarshard, #e7ffee
+steel, #bbbbbb
+tactic_boots, #555555
+tactic_chestplate, #7a7a7a
+tactic_helmet, #798484
+tactic_leggings, #575757
